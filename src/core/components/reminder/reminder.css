@@ -1,0 +1,84 @@
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    background-color: white;
+    width: 400px;
+    max-width: 700px;
+    min-height: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-input {
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: solid thin lightgray;
+    align-self: center;
+}
+
+.btn-wrapper {
+    height: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.btn-save {
+    background-color: blue !important;
+}
+.btn-delete {
+    background-color: red !important;
+}
+.btn-close {
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 10px;
+    outline: none;
+    transition: all 0.25s linear 0s;
+}
+
+.color-box-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+}
+
+.color-box {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.color-active {
+    border: solid black thick;
+}
+
+.hide {
+    display: none;
+}
+
+.date-time {
+    align-self: center;
+    width: 100%;
+    margin: 10px 5px 20px 5px;
+}
+
+.date-time select {
+    width: 100px;
+    margin: 0px 15px;
+}

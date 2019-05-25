@@ -1,0 +1,52 @@
+{
+  "name": "json-calendar",
+  "version": "1.4.0",
+  "description": "A data model for displaying dates and date ranges on a calendar interface.",
+  "keywords": [
+    "json",
+    "calendar",
+    "date",
+    "date picker",
+    "date range"
+  ],
+  "homepage": "https://github.com/rxgx/json-calendar",
+  "license": "MIT",
+  "author": "Ryan Gasparini <ryan@rxgx.com> (http://www.rxgx.com)",
+  "bugs": {
+    "url": "https://github.com/rxgx/json-calendar/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "TZ=America/Phoenix jest",
+    "verify": "npm run lint && npm t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxgx/json-calendar.git"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "globals": {
+      "expect": true,
+      "test": true
+    }
+  }
+}

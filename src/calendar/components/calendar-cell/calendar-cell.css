@@ -1,0 +1,31 @@
+.date {
+    position: sticky;
+    z-index: 1;
+    background: white;
+    padding: 5px 8px;
+    top: 0px;
+    float: right;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: default;
+}
+
+.non-month-day {
+    background-color: lightgray;
+}
+
+.reminder-block {
+    font-size: 12px;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightcoral;
+    color: white;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.calendar__day {
+    position: relative;
+    overflow-y: scroll;
+}

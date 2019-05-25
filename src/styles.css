@@ -1,0 +1,107 @@
+/* global styles */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    font-family: sans-serif, Arial, Helvetica;
+    font-weight: lighter;
+}
+
+button {
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #E2E2E2;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #E2E2E2;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #E2E2E2;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #E2E2E2;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #E2E2E2;
+}
+
+button:active {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+
+/* WRAPPER */
+.wrapper {
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sidebar"
+                            "content";
+    width: 100vw; /* unnecessary, but let's keep things consistent */
+    height: 100vh;
+}
+
+@media screen and (min-width: 850px) {
+    .wrapper {
+        grid-template-columns: 0px 5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "sidebar content";
+    }
+}
+
+main {
+    grid-area: content;
+    padding: 0 48px 48px 48px;
+}
+
+:root {
+    --red: #ED5454;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 100;
+    color: #A8B2B9;
+}
+
+main {
+    background-color: #FCFBFC;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.gray {
+    background-color: gray;
+}
